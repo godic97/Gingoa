@@ -35,6 +35,7 @@ Each component is its own repository, released and versioned on its own. Gingoa 
 |---|---|---|---|
 | **deid-guard** | What personal data reaches the model | Data files are read through a profile card, then a de-identified copy; every row the model reads is scrubbed against known values and detectors; unmasking a column needs the user's approval in a local dialog. Korean and English. | [godic97/deid-guard](https://github.com/godic97/deid-guard) |
 | **mutation-gate** | Whether the agent's tests actually catch bugs | When the agent writes or runs tests, a hook has it mutation-test the code under test with the language's own tool (Stryker for JS/TS, mutmut for Python, cargo-mutants for Rust, gremlins for Go, PIT for Java/Kotlin, Stryker.NET for C#, Stryker4s for Scala), add assertions until the surviving mutants die, and report the score. Other languages use mutants the agent writes itself, run against the project's own tests. A missing tool is installed only after the user agrees. An optional end-of-turn report covers the lines the agent changed. | [godic97/mutation-gate](https://github.com/godic97/mutation-gate) |
+| **claim-check** | Whether the agent's "tests pass", "build succeeds" and "lint is clean" are true | At the end of each turn, a hook finds those claims in the agent's answer (English and Korean) and checks each against the last matching command in the session transcript: its recorded exit code or summary line, and whether code changed after it. The verdict (backed, contradicted, or unverified) is shown to the user; the turn is never blocked. | [godic97/claim-check](https://github.com/godic97/claim-check) |
 
 ## Install
 
@@ -44,6 +45,7 @@ The components are Claude Code plugins. This repository is a plugin marketplace 
 claude plugin marketplace add godic97/Gingoa
 claude plugin install deid-guard@gingoa
 claude plugin install mutation-gate@gingoa
+claude plugin install claim-check@gingoa
 ```
 
 Inside Claude Code, the same works as `/plugin marketplace add godic97/Gingoa` followed by `/plugin install …`. The marketplace points at each component's own repository, so you get the same release either way; each repository also works as a marketplace on its own.

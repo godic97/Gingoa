@@ -23,6 +23,15 @@
         "repo": "godic97/mutation-gate"
       },
       "category": "testing"
+    },
+    {
+      "name": "claim-check",
+      "description": "Checks Claude's claims that tests, a build or a lint/type check passed against the commands that actually ran in the session, and reports the result at the end of each turn without blocking. English and Korean.",
+      "source": {
+        "source": "github",
+        "repo": "godic97/claim-check"
+      },
+      "category": "testing"
     }
   ]
 }
