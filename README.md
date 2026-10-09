@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" width="180" alt="Gingoa logo: a robot head wearing the golden headband from Journey to the West">
+</p>
+
 # Gingoa
 
 An AI code guardrail and validation framework that constrains and checks AI coding agents through logic and code, not through prompts.

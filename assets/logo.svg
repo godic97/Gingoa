@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
+  <title id="title">Gingoa</title>
+  <desc id="desc">A robot head wearing the golden headband (緊箍兒) from Journey to the West.</desc>
+
+  <!-- antenna -->
+  <line x1="128" y1="46" x2="128" y2="70" stroke="#3E4A5A" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="128" cy="40" r="9" fill="#4FD1E8" stroke="#3E4A5A" stroke-width="4"/>
+
+  <!-- ears -->
+  <rect x="38" y="122" width="22" height="46" rx="8" fill="#6B7B90" stroke="#3E4A5A" stroke-width="5"/>
+  <rect x="196" y="122" width="22" height="46" rx="8" fill="#6B7B90" stroke="#3E4A5A" stroke-width="5"/>
+
+  <!-- head -->
+  <rect x="56" y="68" width="144" height="150" rx="30" fill="#9AA9BC" stroke="#3E4A5A" stroke-width="6"/>
+
+  <!-- face plate -->
+  <rect x="76" y="128" width="104" height="70" rx="18" fill="#273140"/>
+  <rect x="94" y="146" width="24" height="16" rx="6" fill="#4FD1E8"/>
+  <rect x="138" y="146" width="24" height="16" rx="6" fill="#4FD1E8"/>
+  <rect x="108" y="176" width="40" height="6" rx="3" fill="#4FD1E8" opacity="0.7"/>
+
+  <!-- the golden headband: 緊箍兒 -->
+  <rect x="48" y="94" width="160" height="22" rx="11" fill="#E8B02A" stroke="#8A5E0A" stroke-width="4"/>
+  <rect x="60" y="99" width="136" height="4" rx="2" fill="#FFE59A" opacity="0.85"/>
+
+  <!-- curls rising from the front of the band -->
+  <path d="M121 92 C110 82 95 84 95 71 C95 62 104 57 111 62" fill="none" stroke="#8A5E0A" stroke-width="9" stroke-linecap="round"/>
+  <path d="M121 92 C110 82 95 84 95 71 C95 62 104 57 111 62" fill="none" stroke="#E8B02A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M135 92 C146 82 161 84 161 71 C161 62 152 57 145 62" fill="none" stroke="#8A5E0A" stroke-width="9" stroke-linecap="round"/>
+  <path d="M135 92 C146 82 161 84 161 71 C161 62 152 57 145 62" fill="none" stroke="#E8B02A" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- jewel at the centre of the band -->
+  <polygon points="128,86 141,105 128,124 115,105" fill="#E8B02A" stroke="#8A5E0A" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="128" cy="105" r="6" fill="#D9473A"/>
+</svg>
