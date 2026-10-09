@@ -33,18 +33,18 @@ Each component is its own repository, released and versioned on its own. Gingoa 
 
 | Component | What it controls | How | Repository |
 |---|---|---|---|
-| **deid-guard** | What personal data reaches the model | Data files are read through a profile card, then a de-identified copy; every row the model reads is scrubbed against known values and detectors; unmasking a column needs the user's approval in a local dialog. Korean and English. | [gingoa-ai/deid-guard](https://github.com/gingoa-ai/deid-guard) |
-| **mutation-gate** | Whether the agent's tests actually catch bugs | When the agent writes or runs tests, a hook has it mutation-test the code under test with the language's own tool (Stryker for JS/TS, mutmut for Python, cargo-mutants for Rust, gremlins for Go, PIT for Java/Kotlin, Stryker.NET for C#, Stryker4s for Scala), add assertions until the surviving mutants die, and report the score. Other languages use mutants the agent writes itself, run against the project's own tests. A missing tool is installed only after the user agrees. An optional end-of-turn report covers the lines the agent changed. | [gingoa-ai/mutation-gate](https://github.com/gingoa-ai/mutation-gate) |
+| **deid-guard** | What personal data reaches the model | Data files are read through a profile card, then a de-identified copy; every row the model reads is scrubbed against known values and detectors; unmasking a column needs the user's approval in a local dialog. Korean and English. | [godic97/deid-guard](https://github.com/godic97/deid-guard) |
+| **mutation-gate** | Whether the agent's tests actually catch bugs | When the agent writes or runs tests, a hook has it mutation-test the code under test with the language's own tool (Stryker for JS/TS, mutmut for Python, cargo-mutants for Rust, gremlins for Go, PIT for Java/Kotlin, Stryker.NET for C#, Stryker4s for Scala), add assertions until the surviving mutants die, and report the score. Other languages use mutants the agent writes itself, run against the project's own tests. A missing tool is installed only after the user agrees. An optional end-of-turn report covers the lines the agent changed. | [godic97/mutation-gate](https://github.com/godic97/mutation-gate) |
 
 ## Install
 
 Both components are Claude Code plugins. Install the ones you need from your shell:
 
 ```
-claude plugin marketplace add gingoa-ai/deid-guard
+claude plugin marketplace add godic97/deid-guard
 claude plugin install deid-guard@godic97
 
-claude plugin marketplace add gingoa-ai/mutation-gate
+claude plugin marketplace add godic97/mutation-gate
 claude plugin install mutation-gate@mutation-gate
 ```
 
