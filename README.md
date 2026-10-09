@@ -30,3 +30,7 @@ Both components are Claude Code plugins. Install the ones you need from inside C
 ```
 
 Each repository's README lists its requirements, configuration and limits.
+
+## License
+
+MIT. See [LICENSE](LICENSE). Each component carries its own license in its repository.
