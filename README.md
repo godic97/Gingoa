@@ -38,17 +38,15 @@ Each component is its own repository, released and versioned on its own. Gingoa 
 
 ## Install
 
-Both components are Claude Code plugins. Install the ones you need from your shell:
+The components are Claude Code plugins. This repository is a plugin marketplace that lists them all; add it once, then install the ones you need from your shell:
 
 ```
-claude plugin marketplace add godic97/deid-guard
-claude plugin install deid-guard@godic97
-
-claude plugin marketplace add godic97/mutation-gate
-claude plugin install mutation-gate@mutation-gate
+claude plugin marketplace add godic97/Gingoa
+claude plugin install deid-guard@gingoa
+claude plugin install mutation-gate@gingoa
 ```
 
-Inside Claude Code, the same works as `/plugin marketplace add …` followed by `/plugin install …`.
+Inside Claude Code, the same works as `/plugin marketplace add godic97/Gingoa` followed by `/plugin install …`. The marketplace points at each component's own repository, so you get the same release either way; each repository also works as a marketplace on its own.
 
 Each repository's README lists its requirements, configuration and limits.
 

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gingoa",
+  "description": "Gingoa: guardrails that check AI coding agents through code, not prompts.",
+  "owner": {
+    "name": "godic97"
+  },
+  "plugins": [
+    {
+      "name": "deid-guard",
+      "description": "De-identifies personal data in tabular files (CSV, TSV, XLSX, JSON) before anything reaches the model. Korean and English.",
+      "source": {
+        "source": "github",
+        "repo": "godic97/deid-guard"
+      },
+      "category": "security"
+    },
+    {
+      "name": "mutation-gate",
+      "description": "Mutation testing for Claude Code: when Claude writes or runs tests, it also mutation-tests the code under test and strengthens the tests until the injected bugs are caught.",
+      "source": {
+        "source": "github",
+        "repo": "godic97/mutation-gate"
+      },
+      "category": "testing"
+    }
+  ]
+}
