@@ -2,6 +2,18 @@
 
 An AI code guardrail and validation framework that constrains and checks AI coding agents through logic and code, not through prompts.
 
+## The name
+
+Gingoa (긴고아) is the Korean reading of 緊箍兒, the golden headband in the Chinese novel *Journey to the West*.
+
+In the story, Sun Wukong, the Monkey King, is the strongest of the pilgrims escorting the monk Tang Sanzang to India: fast, clever, and quick to act on his own judgement. The bodhisattva Guanyin gives Sanzang a golden headband and a spell to go with it. Once Wukong puts the band on, he cannot take it off, and when he goes too far Sanzang recites the Tightening Spell (緊箍咒, 긴고주) and the band closes until he stops. The band takes nothing away from Wukong's strength; it is what lets Sanzang travel with that strength safely. At the end of the journey, when Wukong becomes a Buddha, the band disappears by itself.
+
+An AI coding agent is in Wukong's place: capable, fast, and able to do real damage when it acts on a wrong judgement. Gingoa is the headband:
+
+- **It is worn, not argued with.** The checks sit in the harness around the agent, the way the band sits on Wukong's head, and do not depend on the agent agreeing to them.
+- **It leaves the agent its strength.** Gingoa does not make the agent do less; it makes what the agent does visible and checkable.
+- **The person holds the spell.** Decisions that matter, such as unmasking personal data or accepting a test gap, stay with the user.
+
 ## Why
 
 An AI coding agent reads your data, writes your code and tells you the result is fine. Instructions in a prompt can ask it to be careful; they cannot make it so, and they cannot prove that it was. Gingoa puts the checks where the agent cannot talk its way past them:
