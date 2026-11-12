@@ -1,0 +1,17 @@
+{
+  "name": "gingoa",
+  "version": "0.1.0",
+  "description": "All of Gingoa in one install: deid-guard, mutation-gate, claim-check and sw-qa.",
+  "author": {
+    "name": "godic97"
+  },
+  "homepage": "https://github.com/godic97/Gingoa",
+  "repository": "https://github.com/godic97/Gingoa",
+  "license": "MIT",
+  "dependencies": [
+    "deid-guard",
+    "mutation-gate",
+    "claim-check",
+    "sw-qa"
+  ]
+}

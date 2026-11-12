@@ -7,6 +7,12 @@
   },
   "plugins": [
     {
+      "name": "gingoa",
+      "description": "All of Gingoa in one install: installs and enables deid-guard, mutation-gate, claim-check and sw-qa.",
+      "source": "./plugins/gingoa",
+      "category": "security"
+    },
+    {
       "name": "deid-guard",
       "description": "De-identifies personal data in tabular files (CSV, TSV, XLSX, JSON) before anything reaches the model. Korean and English.",
       "source": {
