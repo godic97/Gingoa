@@ -54,6 +54,19 @@ claude plugin install sw-qa@gingoa
 
 Inside Claude Code, the same works as `/plugin marketplace add godic97/Gingoa` followed by `/plugin install …`. The marketplace points at each component's own repository, so you get the same release either way; each repository also works as a marketplace on its own.
 
+Claude Code does not update third-party marketplaces on its own. To get new releases automatically, turn on auto-update for `gingoa` in `/plugin` → Marketplaces, or add it to `~/.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "gingoa": {
+      "source": { "source": "github", "repo": "godic97/Gingoa" },
+      "autoUpdate": true
+    }
+  }
+}
+```
+
 Each repository's README lists its requirements, configuration and limits.
 
 ## License
