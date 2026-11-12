@@ -32,7 +32,7 @@
     },
     {
       "name": "claim-check",
-      "description": "Checks Claude's claims that tests, a build or a lint/type check passed against the commands that actually ran in the session, and reports the result at the end of each turn without blocking. English and Korean.",
+      "description": "Checks Claude's claims (tests, a build or a lint/type check passed; a commit, push or tag was made) against the commands that actually ran in the session, and reports the result at the end of each turn without blocking. English and Korean.",
       "source": {
         "source": "url",
         "url": "https://github.com/godic97/claim-check.git"
