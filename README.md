@@ -42,14 +42,20 @@ sw-qa is the one component that is a skill rather than a hook: the agent follows
 
 ## Install
 
-The components are Claude Code plugins. This repository is a plugin marketplace that lists them all, plus a `gingoa` plugin that installs and enables all four at once:
+The components are Claude Code plugins. This repository is a plugin marketplace that lists them all, plus a `gingoa` plugin that installs and enables mutation-gate, claim-check and sw-qa at once:
 
 ```
 claude plugin marketplace add godic97/Gingoa
 claude plugin install gingoa@gingoa
 ```
 
-`gingoa` contains no code of its own; it declares the four components as dependencies, so each one still updates from its own repository. Uninstalling `gingoa` leaves them installed; `claude plugin prune` removes the ones nothing else needs.
+deid-guard is not in the bundle, because it changes what the model sees of your data files. Install it on its own when you want it:
+
+```
+claude plugin install deid-guard@gingoa
+```
+
+`gingoa` contains no code of its own; it declares its three components as dependencies, so each one still updates from its own repository. Uninstalling `gingoa` leaves them installed; `claude plugin prune` removes the ones nothing else needs.
 
 To pick components instead, install the ones you need:
 

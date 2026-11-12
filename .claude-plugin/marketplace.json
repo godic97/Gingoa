@@ -8,9 +8,9 @@
   "plugins": [
     {
       "name": "gingoa",
-      "description": "All of Gingoa in one install: installs and enables deid-guard, mutation-gate, claim-check and sw-qa.",
+      "description": "Gingoa in one install: installs and enables mutation-gate, claim-check and sw-qa. deid-guard is opt-in and installed on its own.",
       "source": "./plugins/gingoa",
-      "category": "security"
+      "category": "testing"
     },
     {
       "name": "deid-guard",
